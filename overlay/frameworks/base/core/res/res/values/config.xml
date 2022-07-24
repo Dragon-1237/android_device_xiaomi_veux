@@ -521,6 +521,10 @@
 
     <!-- Whether the display blanks itself when going from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
+     
+        <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
+     
 
      <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>

@@ -14,7 +14,7 @@ $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-PRODUCT_NAME := corvus_veux
+PRODUCT_NAME := dot_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO

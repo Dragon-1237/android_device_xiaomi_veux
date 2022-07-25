@@ -9,7 +9,7 @@
 set -e
 
 export DEVICE=veux
-export DEVICE_COMMON=sm6375-common
+export DEVICE_COMMON=veux-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

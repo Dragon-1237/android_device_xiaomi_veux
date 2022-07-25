@@ -6,10 +6,10 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk) 
 
-# Inherit some common corvus stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+# Inherit some common dotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
@@ -21,7 +21,6 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X4 Pro 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-CORVUS_MAINTAINER=Anant_Goel
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="veux-user 11 RKQ1.211001.001 V13.0.10.0.RKCMIXM release-keys"

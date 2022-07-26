@@ -7,7 +7,7 @@
 cc_library_static {
     name: "init_xiaomi_veux",
     srcs: ["init_xiaomi_veux.cpp"],
-    whole_static_libs: ["//device/xiaomi/sm6375-common:libinit_xiaomi_holi"],
+    whole_static_libs: ["//device/xiaomi/veux-common:libinit_xiaomi_holi"],
     include_dirs: ["system/core/init"],
     recovery_available: true,
 }

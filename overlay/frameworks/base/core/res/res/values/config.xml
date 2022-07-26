@@ -266,6 +266,8 @@
         <item>985.7</item>
         <item>1000.0</item>
     </array>
+         <!-- Face unlock -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
          values in the config_screenBrightnessBacklight array.  On OLED displays these  values

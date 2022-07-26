@@ -20,9 +20,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X4 Pro 5G
 
-# Inherit ANX Camera
-$(call inherit-product, vendor/ANXCamera/config.mk)
-
 # Blur
 TARGET_SUPPORTS_BLUR := true
 

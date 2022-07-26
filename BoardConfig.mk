@@ -7,11 +7,14 @@
 DEVICE_PATH := device/xiaomi/veux
 
 # Inherit from sm6375-common
-include device/xiaomi/sm6375-common/BoardConfigCommon.mk
+include device/xiaomi/veux-common/BoardConfigCommon.mk
 
 # Build Broken
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+ALLOW_MISSING_DEPENDENCIES := true
+RELAX_USES_LIBRARY_CHECK := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -28,4 +31,4 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
-include vendor/xiaomi/veux/BoardConfigVendor.mk
+include vendor/xiaomi/BoardConfigVendor.mk

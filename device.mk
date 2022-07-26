@@ -5,7 +5,7 @@
 #
 
 # Inherit from sm6375-common
-$(call inherit-product, device/xiaomi/sm6375-common/holi.mk)
+$(call inherit-product, device/xiaomi/veux-common/holi.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -23,4 +23,4 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
+$(call inherit-product, vendor/xiaomi/veux-vendor.mk)

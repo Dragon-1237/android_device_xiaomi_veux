@@ -20,6 +20,21 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X4 Pro 5G
 
+# Inherit ANX Camera
+$(call inherit-product, vendor/ANXCamera/config.mk)
+
+# Blur
+TARGET_SUPPORTS_BLUR := true
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# dotOS Official
+DOT_OFFICIAL := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

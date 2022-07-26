@@ -31,4 +31,4 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
-include vendor/xiaomi/veux/BoardConfigVendor.mk
+include vendor/xiaomi/BoardConfigVendor.mk

@@ -26,6 +26,9 @@ TARGET_SUPPORTS_BLUR := true
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
+
 # Charging Animation
 TARGET_INCLUDE_PIXEL_CHARGER := true
 

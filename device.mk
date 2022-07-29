@@ -21,6 +21,10 @@ TARGET_SCREEN_WIDTH := 1080
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+    
+# Xiaomi
+PRODUCT_PACKAGES += \
+    XiaomiParts    
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
